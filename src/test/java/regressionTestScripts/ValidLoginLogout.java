@@ -26,7 +26,6 @@ public class ValidLoginLogout extends Generic_Test {
 				"validation for valid username and password");
 		PageObjectManager pom = new PageObjectManager(driver);
 		Login_Page lp = pom.getLoginPage();
-		//Login_Page lp=new Login_Page(driver);
 		test.info("test has started");
 		
 		lp.setUsername(username);
@@ -36,7 +35,7 @@ public class ValidLoginLogout extends Generic_Test {
 		lp.clickLogin();
 		test.pass("clicked on Login");
 		EnterTimeTrack ep = pom.getEntertimetrack_page();
-		//EnterTimeTrack ep=new EnterTimeTrack(driver);
+	
 		ep.verifyTitle(5, "Enter");
 		Assert.assertEquals(driver.getTitle(), eTitle);
 		test.pass("verified homePage");

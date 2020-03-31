@@ -40,6 +40,7 @@ public class InvalidLogin extends Generic_Test {
 		Assert.assertEquals(driver.getTitle(), eTitle);
 		test.pass("title is verified");
 		test.info("test has ended");
+		
 
 	}
 
